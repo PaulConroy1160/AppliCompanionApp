@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg" >
+
+    <TextView
+        android:id="@+id/jobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/placeholderText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jobTitle"
+        android:layout_centerHorizontal="true"
+        android:text="@string/placeholderText"
+        android:textStyle="italic"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:maxLines="7"
+    	android:lines="7"
+    	android:gravity="left"
+        android:text="@string/placeholderText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="#fff"
+        android:alpha="0.5"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="@string/placeholderText"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/summaryId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/summary"
+        android:layout_below="@+id/salary"
+        android:layout_marginTop="67dp"
+        android:text="@string/summary_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/summaryId"
+        android:layout_below="@+id/company"
+        android:layout_marginTop="48dp"
+        android:text="@string/placeholderText"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/contractId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/location"
+        android:layout_centerHorizontal="true"
+        android:text="@string/placeholderText"
+        android:textStyle="bold" />
+
+</RelativeLayout>

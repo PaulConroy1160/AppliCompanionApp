@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg" >
+
+    <Button
+        android:id="@+id/searchBTN"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:onClick="viewProfile"
+        android:text="@string/searchText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/searchInputField"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/searchBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:hint="@string/searchFieldHint"
+        android:background="#ffffff"
+        android:alpha="0.5"
+        android:ems="20"
+        android:gravity="center"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
